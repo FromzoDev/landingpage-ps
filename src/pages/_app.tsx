@@ -1,7 +1,6 @@
 import { AppProps } from "next/app";
 import { useEffect, useState } from "react";
 import RootLayout from "../app/layout/RootLayout";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import '../app/styles/globals.css'
 import '../app/styles/cgu.css'
 
@@ -33,17 +32,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     return <div>Loading...</div>;
   }
 
-  
-
   return (
-      <Router>
-        <RootLayout>
-          <Routes>
-            {/* <Route path="/" element={<Component {...pageProps} />} /> */}
-            <Route path="/" element={<Component {...pageProps} />} />
-            <Route path="/cgu" element={<Component {...pageProps} />} />
-          </Routes>
-        </RootLayout>
-      </Router>
+    <Component {...pageProps} />
   );
 }
