@@ -1,0 +1,88 @@
+.cgu-container{
+    margin: 0 ;
+    padding: 50px 0;
+    display: flex;
+    font-family: Montserrat;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 700;
+    color: #2E424C;
+    flex-direction: column;
+
+}
+
+.cgu-title-1{
+    margin: 0 15px;
+    max-width: 1000px;
+    width: 1000px;
+    font-size: 48px;
+    text-align: start;
+    @media (max-width: 1050px) {
+        ffont-size: 32px;
+        width: 700px;
+    }
+    @media (max-width: 850px) {
+        font-size: 32px;
+        width:  500px;
+    }
+    @media (max-width: 550px) {
+        width:  350px;        
+    }
+    @media (max-width: 450px) {
+        width:  250px;        
+    } 
+}
+
+.cgu-title{
+    max-width: 1000px;
+    width: 1000px;
+    text-align: start;
+    font-size: 36px;
+    margin: 35px 15px 10px 15px;
+    @media (max-width: 1050px) {
+        width: 700px;
+        font-size: 32px;
+    }
+    @media (max-width: 850px) {
+        width: 500px; 
+        font-size: 24px;       
+    }
+    @media (max-width: 650px) {
+        font-size: 24px;
+        
+    }
+    @media (max-width: 550px) {
+        width:  350px;        
+    }
+    @media (max-width: 450px) {
+        width:  250px;        
+    } 
+}
+
+.cgu-text{
+    margin: 0 15px;
+    white-space: normal;
+    max-width: 1000px;
+    height: auto;
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 500;
+    @media (max-width: 1050px) {
+        width: 700px;        
+    }
+    @media (max-width: 850px) {
+        width: 500px;        
+    }
+    @media (max-width: 550px) {
+        width:  350px;        
+    }
+    @media (max-width: 450px) {
+        width:  250px;        
+    }    
+    
+}
+
+body{
+    background-color: #ECECEC;
+}
