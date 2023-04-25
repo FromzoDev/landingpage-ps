@@ -1,4 +1,6 @@
+
 export default function Articles(){
+
 return (
 <div className="cgu-container">
   <h1 className="cgu-title-1">Conditions Générales d’Utilisation</h1>

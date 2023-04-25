@@ -7,22 +7,29 @@ import applestoreButton from "./../../public/Images/BoutonApple.png"
 import mockup from "../../public/Images/iphoneHomePage.png"
 import Link from 'next/link'
 
+import { Metadata } from 'next';
+import Head from 'next/head';
+
+export const metadata: Metadata = {
+  title: 'test',
+};
+
 export default function Home() {
 
-  const title = 'PhotoStopper';
-    const description = "🧭 L'application pour redécouvrir le(s) patrimoine(s) des Hauts-de-France";
-    const ogImage = {
-      url: 'https://imagedelivery.net/hl1WDbLOjbgv1wkNUhhX3w/3a442acc-5f6f-4897-46e0-ab567b813400/w=7952',
-      width: 800,
-      height: 600,
-      alt: '',
-    };
-    const url = 'https://photostopper.fr';
+  // const title = 'PhotoStopper';
+  //   const description = "🧭 L'application pour redécouvrir le(s) patrimoine(s) des Hauts-de-France";
+  //   const ogImage = {
+  //     url: 'https://imagedelivery.net/hl1WDbLOjbgv1wkNUhhX3w/3a442acc-5f6f-4897-46e0-ab567b813400/w=7952',
+  //     width: 800,
+  //     height: 600,
+  //     alt: '',
+  //   };
+  //   const url = 'https://photostopper.fr';
 
 
 return (
 <div className='container'>
-      <NextSeo
+      {/* <NextSeo
                 title={title}
                 description={description}
                 openGraph={{
@@ -38,7 +45,21 @@ return (
                   site: '@monsite',
                   cardType: 'summary_large_image',
                   }}
-                />
+      /> */}
+
+    <Head>
+      <title>PhotoStopper</title>
+      <meta name="description" content="🧭 L'application pour redécouvrir le(s) patrimoine(s) des Hauts-de-France" />
+      {/* <meta name="keywords" content="mots clés, pour, ma, page" /> */}
+      <meta property="og:title" content="PhotoStopper" />
+      <meta property="og:description" content="🧭 L'application pour redécouvrir le(s) patrimoine(s) des Hauts-de-France" />
+      <meta property="og:image" content="https://imagedelivery.net/hl1WDbLOjbgv1wkNUhhX3w/3a442acc-5f6f-4897-46e0-ab567b813400/w=7952" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="PhotoStopper" />
+      <meta name="twitter:description" content="🧭 L'application pour redécouvrir le(s) patrimoine(s) des Hauts-de-France" />
+      <meta name="twitter:image" content="https://imagedelivery.net/hl1WDbLOjbgv1wkNUhhX3w/3a442acc-5f6f-4897-46e0-ab567b813400/w=7952" />
+    </Head>
+
     <div className="bar-container">
       <svg width="301" height="39" viewBox="0 0 301 39" fill="none" xmlns="http://www.w3.org/2000/svg"
         className='photostopper-logo'>

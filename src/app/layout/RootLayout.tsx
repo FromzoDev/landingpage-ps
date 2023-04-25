@@ -6,7 +6,11 @@ interface RootLayoutProps {
 import Head from "../head"
 
 
+
 export default function RootLayout({children}: RootLayoutProps) {
+
+  
+
   return (
     <div>
       <Head/>
