@@ -1,11 +1,11 @@
 import { AppProps } from "next/app";
 import { useEffect, useState } from "react";
-import RootLayout from "../app/layout/RootLayout";
 import '../app/styles/globals.css'
 import '../app/styles/cgu.css'
+import Head from "next/head";
+// import Head from "@/app/head";
 
 export default function MyApp({ Component, pageProps }: AppProps) {
-  const [isLoaded, setIsLoaded] = useState(false);
   useEffect(() => {
       const axeptioSettings = {
         clientId: "6446b06518bd08d972384011",
@@ -24,15 +24,11 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       // @ts-ignore
       window.axeptioSettings = axeptioSettings;
     }, []);
-  useEffect(() => {
-    setIsLoaded(true);
-  }, []);
 
-  if (!isLoaded) {
-    return <div>Loading...</div>;
-  }
 
   return (
+    <>
     <Component {...pageProps} />
-  );
+    </>
+    );
 }
