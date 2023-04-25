@@ -7,12 +7,8 @@ import applestoreButton from "./../../public/Images/BoutonApple.png"
 import mockup from "../../public/Images/iphoneHomePage.png"
 import Link from 'next/link'
 
-import { Metadata } from 'next';
-import Head from 'next/head';
 
-export const metadata: Metadata = {
-  title: 'test',
-};
+import Head from 'next/head';
 
 export default function Home() {
 
