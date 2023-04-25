@@ -1,9 +1,13 @@
+
+
 export default function Head() {
+
+    
     return (
       <>
         <title>PhotoStopper</title>
         <meta content="width=device-width, initial-scale=1 viewport-fit=cover"   name="viewport" />
-        <meta name="description" content="null" />
+        <meta name="description" content="🧭 L'application pour redécouvrir le(s) patrimoine(s) des Hauts-de-France" />
 
         <meta property="og:title" content="PhotoStopper"/>
         <meta property="og:description" content="🧭 L'application pour redécouvrir le(s) patrimoine(s) des Hauts-de-France"/>

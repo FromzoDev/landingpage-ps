@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react';
+import { NextSeo } from "next-seo"
 
 import playstoreButton from "./../../public/Images/BoutonPlayStore.png"
 import applestoreButton from "./../../public/Images/BoutonApple.png"
@@ -7,8 +8,37 @@ import mockup from "../../public/Images/iphoneHomePage.png"
 import Link from 'next/link'
 
 export default function Home() {
+
+  const title = 'PhotoStopper';
+    const description = "🧭 L'application pour redécouvrir le(s) patrimoine(s) des Hauts-de-France";
+    const ogImage = {
+      url: 'https://imagedelivery.net/hl1WDbLOjbgv1wkNUhhX3w/3a442acc-5f6f-4897-46e0-ab567b813400/w=7952',
+      width: 800,
+      height: 600,
+      alt: '',
+    };
+    const url = 'https://photostopper.fr';
+
+
 return (
 <div className='container'>
+      <NextSeo
+                title={title}
+                description={description}
+                openGraph={{
+                  title,
+                  description,
+                  images: [ogImage],
+                  url,
+                  type: 'website',
+                  locale: 'fr_FR',
+                }}
+                twitter={{
+                  handle: '@monsite',
+                  site: '@monsite',
+                  cardType: 'summary_large_image',
+                  }}
+                />
     <div className="bar-container">
       <svg width="301" height="39" viewBox="0 0 301 39" fill="none" xmlns="http://www.w3.org/2000/svg"
         className='photostopper-logo'>

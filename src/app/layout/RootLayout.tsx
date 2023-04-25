@@ -10,6 +10,7 @@ export default function RootLayout({children}: RootLayoutProps) {
   return (
     <div>
       <Head/>
+      
       {children}
       
     </div>
