@@ -17,21 +17,7 @@
     max-width: 1000px;
     width: 1000px;
     font-size: 48px;
-    text-align: start;
-    @media (max-width: 1050px) {
-        ffont-size: 32px;
-        width: 700px;
-    }
-    @media (max-width: 850px) {
-        font-size: 32px;
-        width:  500px;
-    }
-    @media (max-width: 550px) {
-        width:  350px;        
-    }
-    @media (max-width: 450px) {
-        width:  250px;        
-    } 
+    text-align: star
 }
 
 .cgu-title{
@@ -40,24 +26,6 @@
     text-align: start;
     font-size: 36px;
     margin: 35px 15px 10px 15px;
-    @media (max-width: 1050px) {
-        width: 700px;
-        font-size: 32px;
-    }
-    @media (max-width: 850px) {
-        width: 500px; 
-        font-size: 24px;       
-    }
-    @media (max-width: 650px) {
-        font-size: 24px;
-        
-    }
-    @media (max-width: 550px) {
-        width:  350px;        
-    }
-    @media (max-width: 450px) {
-        width:  250px;        
-    } 
 }
 
 .cgu-text{
@@ -67,22 +35,68 @@
     height: auto;
     text-align: justify;
     font-size: 16px;
-    font-weight: 500;
-    @media (max-width: 1050px) {
-        width: 700px;        
-    }
-    @media (max-width: 850px) {
-        width: 500px;        
-    }
-    @media (max-width: 550px) {
-        width:  350px;        
-    }
-    @media (max-width: 450px) {
-        width:  250px;        
-    }    
-    
+    font-weight: 500; 
 }
 
 body{
     background-color: #ECECEC;
 }
+
+@media (max-width: 1050px) {
+    .cgu-title-1{
+        width: 700px;
+        font-size: 32px;
+    }
+
+    .cgu-title{
+        width: 700px;
+        font-size: 32px;
+    }
+    .cgu-text{
+        width: 700px;     
+    }
+}
+
+@media (max-width: 850px) {
+    .cgu-title-1{
+        font-size: 32px;
+        width:  500px;  
+    }
+
+    .cgu-title{
+        width: 500px; 
+        font-size: 24px;  
+    }
+    .cgu-text{
+        width:  350px;   
+    }
+}
+@media (max-width: 650px) {
+    .cgu-title{
+        font-size: 24px;
+    }   
+}
+
+@media (max-width: 550px) {
+    .cgu-title-1{
+        width:  350px;  
+    }
+    .cgu-title{
+        width:  350px;
+    }
+    .cgu-text{
+        width:  350px;
+    }      
+}
+
+@media (max-width: 450px) {
+    .cgu-title-1{
+        width:  250px;
+    }
+    .cgu-title{
+        width:  250px;
+    }
+    .cgu-text{
+        width:  250px;
+    }        
+}  
