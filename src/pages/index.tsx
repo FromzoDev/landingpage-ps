@@ -3,7 +3,6 @@ import React from 'react';
 
 import playstoreButton from "./../../public/Images/BoutonPlayStore.png"
 import applestoreButton from "./../../public/Images/BoutonApple.png"
-
 import Link from 'next/link'
 
 
