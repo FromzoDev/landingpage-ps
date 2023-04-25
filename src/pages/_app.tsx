@@ -28,6 +28,19 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <>
+    <Head>
+      <title>Photostopper</title>
+      <meta name="description" content="🧭 L'application pour redécouvrir le(s) patrimoine(s) des Hauts-de-France" />
+      {/* <meta name="keywords" content="mots clés, pour, ma, page" /> */}
+      <meta property="og:title" content="PhotoStopper" />
+      <meta property="og:description" content="🧭 L'application pour redécouvrir le(s) patrimoine(s) des Hauts-de-France" />
+      <meta property="og:image" content="https://imagedelivery.net/hl1WDbLOjbgv1wkNUhhX3w/1af775ac-230f-40e2-1e71-e4be8b65ea00/w=4392,format=webp" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="PhotoStopper" />
+      <meta name="twitter:description" content="🧭 L'application pour redécouvrir le(s) patrimoine(s) des Hauts-de-France" />
+      <meta name="twitter:image" content="https://imagedelivery.net/hl1WDbLOjbgv1wkNUhhX3w/1af775ac-230f-40e2-1e71-e4be8b65ea00/w=4392,format=webp" />
+
+    </Head>
     <Component {...pageProps} />
     </>
     );
