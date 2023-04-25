@@ -242,7 +242,7 @@ return (
   <div className="info-container">
     <div className="desc-container">
       <div className="text-container">
-        <p className="title">(Re)découvrez les patrimoines des Hauts-de-France</p>
+        <h1 className="title">(Re)découvrez les patrimoines des Hauts-de-France</h1>
         <p className="description">
           PhotoStopper, l’application pour (re)découvrir la richesse du patrimoine culturel, architectural, 
           historique et naturel des Hauts-de-France.
