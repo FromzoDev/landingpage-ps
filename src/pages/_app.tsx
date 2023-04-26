@@ -34,7 +34,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       <title>Photostopper</title>
       <meta name="description" content=" 🧭 PhotoStopper, l’application pour (re)découvrir la richesse du patrimoine culturel, architectural, historique et naturel des Hauts-de-France." />
       <meta name="title" content=" PhotoStopper - (Re)découvrez les patrimoines des Hauts-de-France" />
-      {/* <meta name="keywords" content="mots clés, pour, ma, page" /> */}
+      <meta name="keywords" content="photostopper, site vitrine, photostopper, autostopper, visite patrimoine, visite arras, Arras, application arras, offisme de tourisme arras"/>
       <meta property="og:title" content="PhotoStopper - (Re)découvrez les patrimoines des Hauts-de-France" />
       <meta property="og:description" content=" 🧭 PhotoStopper, l’application pour (re)découvrir la richesse du patrimoine culturel, architectural, historique et naturel des Hauts-de-France." />
       <meta property="og:image" content="https://imagedelivery.net/hl1WDbLOjbgv1wkNUhhX3w/3a442acc-5f6f-4897-46e0-ab567b813400/w=7952" />
