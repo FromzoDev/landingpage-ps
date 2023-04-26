@@ -108,10 +108,11 @@ html, body {
 }
 
 .mockup{
+  margin-top: 20px;
   width: 300px;
   height: auto;
   transform: translatey(0px);
-  animation: float 6s ease-in-out 1.5s infinite, slideinLeft 1.5s ease-in-out 0s;
+  /* animation: float 6s ease-in-out 1.5s infinite, slideinLeft 1.5s ease-in-out 0s; */
   
 }
 
@@ -295,7 +296,7 @@ html, body {
     padding-top: 10px; 
   }
   .footer-container{
-    display: none; 
+    padding-bottom: 10px;
   }
   .social-container{
     margin-right: 15px
@@ -305,6 +306,19 @@ html, body {
   }
   .photostopper-logo{
     margin-left: 15px
+  }
+}
+
+@media (max-width: 700px){
+  .copyright-text{
+    display: none;
+  }
+  .link-container{
+    margin: 0;
+    padding: 0 15px;
+    width: 100%;
+    justify-content: space-between;
+    
   }
 }
 
@@ -364,6 +378,9 @@ html, body {
     gap: 10px;
     justify-content: center;
     align-items: center;
+  }
+  .link{
+    font-size: 10px;
   }
   .title{
     line-height: 31px;
