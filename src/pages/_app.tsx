@@ -17,8 +17,8 @@ import metadataimage from "./../../public/Images/metaDataImage.jpg"
 export default function MyApp({ Component, pageProps }: AppProps) {
 useEffect(() => {
 const axeptioSettings = {
-clientId: "6446b06518bd08d972384011",
-cookiesVersion: "phtostopper-fr",
+clientId: "644982449930ada889b24ed4",
+cookiesVersion: "photostopper-fr",
 };
 const script = document.createElement("script");
 script.async = true;
