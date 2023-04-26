@@ -112,7 +112,7 @@ html, body {
   width: 300px;
   height: auto;
   transform: translatey(0px);
-  /* animation: float 6s ease-in-out 1.5s infinite, slideinLeft 1.5s ease-in-out 0s; */
+  animation: float 6s ease-in-out 1.5s infinite, slideinLeft 1.5s ease-in-out 0s;
   
 }
 
