@@ -7,8 +7,9 @@ import Link from 'next/link'
 
 
 import Head from 'next/head';
+import { GetStaticPropsContext } from 'next';
 
-export default function Home() {
+export  default function Home() {
 
 return (
 <div className='container'>
@@ -273,4 +274,11 @@ return (
   </div>
 </div>
 )
+}
+
+
+export async function getStaticProps(context: GetStaticPropsContext) {
+  return {
+    props: {}, // will be passed to the page component as props
+  }
 }
