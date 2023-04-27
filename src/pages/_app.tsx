@@ -1,10 +1,7 @@
 import { AppProps } from "next/app";
-import { useEffect, useState } from "react";
-import
-{ Analytics }
-from
-
-'@vercel/analytics/react'
+import { useEffect, useState,  } from "react";
+import React, { Component } from 'react';
+import { Analytics } from '@vercel/analytics/react'
 ;
 
 import '../app/styles/globals.css'
@@ -13,27 +10,34 @@ import Head from "next/head";
 // import Head from "@/app/head";
 
 import metadataimage from "./../../public/Images/metaDataImage.jpg"
+import Script from "next/script";
 
 export default function MyApp({ Component, pageProps }: AppProps) {
-useEffect(() => {
-const axeptioSettings = {
-clientId: "644982449930ada889b24ed4",
-cookiesVersion: "photostopper-fr",
-};
-const script = document.createElement("script");
-script.async = true;
-script.src = "//static.axept.io/sdk-slim.js";
-script.setAttribute("data-id", "axeptio-sdk");
-script.setAttribute("data-version", "latest");
-script.setAttribute("data-cookieconsent", "ignore");
-script.setAttribute("data-sdk-type", "notice");
-script.setAttribute("data-sdk-instance", "axeptio");
-document.body.appendChild(script);
 
-// @ts-ignore
-window.axeptioSettings = axeptioSettings;
-}, []);
+  // const AxeptioInjector = () =>{
+  //   useEffect(() =>{
+  //     const el = document.createElement("script");
+  //     el.setAttribute('src',"https//static.axept.io/sdk-slim.js" )
+  //   })
+  // }
+  useEffect(()=>{
+    const axeptioSettings = {
+      clientId: "644982449930ada889b24ed4",
+      cookiesVersion: "photostopper-fr",
+    };
+    const script = document.createElement("script");
+    script.async = true;
+    script.setAttribute("src","//static.axept.io/sdk-slim.js") ;
+    script.setAttribute("data-id", "644982449930ada889b24ed4");
+    script.setAttribute("data-version", "latest");
+    script.setAttribute("data-cookieconsent", "ignore");
+    script.setAttribute("data-sdk-type", "notice");
+    script.setAttribute("data-sdk-instance", "axeptio");
+    document.body.appendChild(script);
 
+    // @ts-ignore
+    window.axeptioSettings = axeptioSettings;
+  })
 
 return (
 <>
