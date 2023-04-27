@@ -268,7 +268,7 @@ return (
   <div className="footer-container">
     <p className="copyright-text">PhotoStopper © 2023 - Tous droits réservés</p>
     <div className="link-container">
-      <a href="" className="link">Paramétrage des cookies</a>
+      <a href="javascript:openAxeptioCookies()" className="link">Paramétrage des cookies</a>
       <Link href='/cgu' className='link'>Mentions Légales</Link>
     </div>
   </div>
