@@ -7,9 +7,9 @@
 
 html, body {
   margin: 0;
-  /* max-height: 100vh; */
+  max-height: 100vh;
   width: 100%;
-  height: 100%; 
+  height: 100vh; 
   font-family: Montserrat;
   zoom: 0 !important; 
 }
@@ -29,7 +29,7 @@ html, body {
 
 .image{
   width: 100%;
-  height: 100%;
+  height: 100vh;
   position: absolute;
   object-fit:  cover;
   object-position:  50% 40% ;
@@ -40,7 +40,7 @@ html, body {
   z-index: 0;
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.48) -6.43%, rgba(0, 0, 0, 0) 72.33%);
 }
 
@@ -69,8 +69,8 @@ html, body {
   width: 100%;
   margin: 0;
   display: flex;
-  position : absolute;
-  bottom : 0px;
+  position: absolute;
+  bottom : 0;
   z-index: 999;
   justify-content: space-between;
   
