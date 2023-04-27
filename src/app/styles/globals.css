@@ -58,7 +58,7 @@ html, body {
 
 .info-container{
   width: 100%;
-  height: 55vh;
+  height: 100vh;
   z-index: 0;
   justify-content: center;
   position: relative;
@@ -325,7 +325,7 @@ html, body {
 @media (max-width: 600px) {
   .desc-container{
     width: 100%;
-    height: 70vh;
+    height: 55vh;
     justify-content: space-between
   }
   .text-container{
