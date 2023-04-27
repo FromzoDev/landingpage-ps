@@ -243,6 +243,9 @@ return (
         </a>
       </div>
   </div>
+  <div className='image-gradiant'></div>
+  <Image src='https://imagedelivery.net/hl1WDbLOjbgv1wkNUhhX3w/e60c4a20-8fc5-45f6-f692-be1b0e0bdf00/w=2200' width={2000} height={2000} alt='/' className='image'/>
+  
   <div className="info-container">
     <div className="desc-container">
       <div className="text-container">
