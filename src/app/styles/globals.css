@@ -19,8 +19,8 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 0vh;
-  overflow-y: hidden;
+  height: 100vh;
+
   /* background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.48) -6.43%, rgba(0, 0, 0, 0) 72.33%), 
                     url('https://imagedelivery.net/hl1WDbLOjbgv1wkNUhhX3w/e60c4a20-8fc5-45f6-f692-be1b0e0bdf00/w=2200');
   background-size: 100%, cover; */
@@ -29,7 +29,7 @@ html, body {
 
 .image{
   width: 100%;
-  height: 100vh;
+  height: 100%;
   position: absolute;
   object-fit:  cover;
   object-position:  50% 40% ;
