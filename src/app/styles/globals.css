@@ -7,9 +7,8 @@
 
 html, body {
   margin: 0;
-  max-height: 100vh;
   width: 100%;
-  height: 100vh; 
+  height: 100%; 
   font-family: Montserrat;
   zoom: 0 !important; 
 }
@@ -19,7 +18,7 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100vh;
+  min-height: 100%;
 
   /* background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.48) -6.43%, rgba(0, 0, 0, 0) 72.33%), 
                     url('https://imagedelivery.net/hl1WDbLOjbgv1wkNUhhX3w/e60c4a20-8fc5-45f6-f692-be1b0e0bdf00/w=2200');
