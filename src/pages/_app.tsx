@@ -57,6 +57,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 
       <Head>
         <title>Photostopper</title>
+        <link rel="icon" href="https://res.cloudinary.com/dfuhbtvh5/image/upload/v1683281672/logo_pslnmv.png" />
         <meta name="description"
           content=" 🧭 PhotoStopper, l’application pour (re)découvrir la richesse du patrimoine culturel, architectural, historique et naturel des Hauts-de-France." />
         <meta name="title" content=" PhotoStopper - (Re)découvrez les patrimoines des Hauts-de-France" />
